@@ -7,6 +7,17 @@ Un script CSS liviano y eficiente para añadir números correlativos a las pesta
 - **Modo Vertical Expandido:** Muestra el número antes del título de forma limpia.
 - **Modo Vertical Colapsado:** Transforma el número en un cómodo *badge* (notificación) con fondo gris oscuro abajo a la izquierda del favicon para que no se pierda de vista.
 
+## Capturas
+
+### Horizontal
+![Modo horizontal](assets/horizontal.png)
+
+### Vertical
+
+| Colapsado | | Expandido |
+|:---------:|:-:|:---------:|
+| ![Colapsado](assets/vertical-colapsado.png) | | ![Expandido](assets/vertical-expandido.png) |
+
 ## Instalación paso a paso
 
 ### Paso 1: Activar hojas de estilo en Firefox
