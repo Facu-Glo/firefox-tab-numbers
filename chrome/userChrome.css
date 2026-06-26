@@ -1,0 +1,60 @@
+#tabbrowser-tabs {
+    counter-reset: vertical-tab-counter !important;
+}
+
+#tabbrowser-tabs .tabbrowser-tab {
+    counter-increment: vertical-tab-counter !important;
+}
+
+.tab-icon-stack {
+    position: relative !important;
+}
+
+/* ============ HORIZONTAL ============ */
+#tabbrowser-tabs:not([orient="vertical"]) .tab-icon-stack::before {
+    display: none !important;
+}
+
+#tabbrowser-tabs:not([orient="vertical"]) .tab-label::before,
+#tabbrowser-tabs:not([orient="vertical"]) .tab-text::before {
+    content: counter(vertical-tab-counter) ". " !important;
+    display: inline !important;
+    font-weight: bold !important;
+    color: inherit !important;
+}
+
+/* ============ VERTICAL ============ */
+/* Colapsado */
+#tabbrowser-tabs[orient="vertical"] .tab-icon-stack::before {
+    content: counter(vertical-tab-counter) !important;
+    position: absolute !important;
+    bottom: -4px !important;
+    left: -4px !important;
+    font-size: 9px !important;
+    font-weight: bold !important;
+    color: inherit !important;
+    line-height: 1.2 !important;
+    z-index: 1 !important;
+    pointer-events: none !important;
+    background: #5a5a5a !important;
+    padding: 0 2px !important;
+    border-radius: 3px !important;
+    color: #ffffff !important;
+}
+
+.tab-label::before {
+    content: "" !important;
+}
+
+/* Expandido */
+[expanded] .tab-icon-stack::before {
+    display: none !important;
+}
+
+[expanded] .tab-label::before,
+[expanded] .tab-text::before {
+    content: counter(vertical-tab-counter) ". " !important;
+    display: inline !important;
+    font-weight: bold !important;
+    color: inherit !important;
+}
