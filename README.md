@@ -28,7 +28,7 @@ Un script CSS liviano y eficiente para añadir números correlativos a las pesta
 ### Paso 2: Copiar el archivo
 1. Abre otra pestaña y escribe `about:profiles`.
 2. Busca tu perfil activo (suele decir *Perfil predeterminado: sí*) y en la fila **Directorio de raíz**, haz clic en **Abrir carpeta**.
-3. Descarga la carpeta `chrome` de este repositorio (o créala tú mismo) y pega el archivo `userChrome.css` dentro de ella.
+3. Descarga la carpeta `chrome` de este repositorio (o creala) y pega el archivo `userChrome.css` dentro de ella.
 
 ### Paso 3: Reiniciar
-Cierra Firefox por completo y vuélvelo a abrir para disfrutar de tus pestañas numeradas.
+Cierra Firefox por completo y vuélvelo a abrir.
